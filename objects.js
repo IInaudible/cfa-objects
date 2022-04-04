@@ -22,11 +22,6 @@ delete fruits.lemon;
 console.log(fruits)
 // write a function that takes in an object and key and returns that value at that key in the object
 const func = function(object, key) {
-    for (let i in object) {
-        if (key === i) {
-            return object[key]
-        }
-    }
+    return object[key]
 }
-
-console.log(func(fruits, "lime"))
+console.log(func(fruits, "lime"));
